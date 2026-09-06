@@ -57,6 +57,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: SunConfigEntry) -> bool:
     ):
         ent_reg.async_remove(entity_id)
 
+    _LOGGER.info("DAT266 / DIT265 Assignment 1 Development Environment")
     sun = Sun(hass)
     component = EntityComponent[Sun](_LOGGER, DOMAIN, hass)
     await component.async_add_entities([sun])
