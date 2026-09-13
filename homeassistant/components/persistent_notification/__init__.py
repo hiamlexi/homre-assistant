@@ -153,6 +153,7 @@ def async_dismiss_all(hass: HomeAssistant) -> None:
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
     """Set up the persistent notification component."""
+    _LOGGER.warning("Software Evolution Course: Demo Assignment 1")
 
     @callback
     def create_service(call: ServiceCall) -> None:
